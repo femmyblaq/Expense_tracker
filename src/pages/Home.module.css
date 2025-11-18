@@ -1,0 +1,61 @@
+/* Home component CSS module
+   Background image is set via an imported asset in the component using an <img> element.
+   Keep this file available for any component-scoped styles. */
+
+.btn {
+  border-radius: 0.375rem;
+  transition: transform 0.12s ease, background-color 0.12s ease;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background-color: #14b8a6; /* custom turquoise */
+  color: #000;
+}
+.btnPrimary:hover {
+  background-color: #2dd4bf;
+}
+
+.btnSecondary {
+  background-color: #fff; /* darker turquoise */
+  color: #000;
+}
+.btnSecondary:hover {
+  background-color: #3adeed;
+}
+
+.lead {
+  color: #ffffff;
+  font-size: 1.125rem; /* ~18px */
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 1.25rem; /* ~20px on md+ */
+  }
+}
+
+/* Big custom gradient title */
+.titleGradient {
+  /* Rich three-color gradient */
+  background: linear-gradient(90deg, #06b6d4 0%, #3adeed 50%, #14b8a6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  line-height: 1;
+  /* Base size (mobile) */
+  font-size: 2.25rem; /* 36px */
+}
+
+@media (min-width: 768px) {
+  .titleGradient {
+    font-size: 3.5rem; /* 56px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .titleGradient {
+    font-size: 4.5rem; /* 72px */
+  }
+}
