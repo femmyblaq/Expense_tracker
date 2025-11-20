@@ -22,7 +22,7 @@ export default function Home() {
       <div className="z-10 flex flex-col items-center gap-6 p-6 w-full max-w-md text-center">
         {/* Logo */}
         <div className="flex flex-col items-center gap-3 select-none">
-          <div className="text-light-400 text-5xl font-bold">⇄</div>
+          <div className="text-5xl font-bold">⇄</div>
 
           {/* Gradient Title */}
           <h1 className={`tracking-wide ${styles.titleGradient}`}>
@@ -49,7 +49,7 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/dashboard" className={`text-center ${styles.lead}`}>Dashboard</Link>
       </div>
     </div>
   );
