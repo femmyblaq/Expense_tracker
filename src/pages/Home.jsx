@@ -49,6 +49,7 @@ export default function Home() {
             </button>
           </Link>
         </div>
+        <Link to="/dashboard">Dashboard</Link>
       </div>
     </div>
   );
